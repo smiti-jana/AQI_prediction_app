@@ -4,7 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Load model
-model = pickle.load(open("Model/aqi_model.pkl", "rb"))
+import joblib
+model = joblib.load("Model/aqi_model.pkl")
 
 st.title("🌫 Air Quality Index Prediction App")
 st.write("Enter pollutant values to predict AQI")
@@ -99,3 +100,4 @@ if st.button("Predict AQI"):
         • Walking or cycling recommended  
 
         """)
+

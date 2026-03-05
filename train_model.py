@@ -1,7 +1,11 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
-import pickle
+import joblib
+import os
+
+# Create model folder if it doesn't exist
+os.makedirs("Model", exist_ok=True)
 
 # Load dataset
 data = pd.read_csv("C:/Users/smiti/OneDrive/Desktop/AQI prediction/dataset/city_day.csv")
@@ -22,11 +26,10 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Train model
-model = RandomForestRegressor()
+model = RandomForestRegressor(n_estimators=50, random_state=42)
 model.fit(X_train, y_train)
 
-# Save model
-pickle.dump(model, open("model/aqi_model.pkl", "wb"))
+# Save trained model using joblib
+joblib.dump(model, "Model/aqi_model.pkl", compress=3)
 
 print("Model trained and saved successfully!")
-model = RandomForestRegressor(n_estimators=50)

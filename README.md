@@ -44,7 +44,8 @@ The project uses a **Random Forest Regressor** trained on air pollution data.
 
 ## 📂 Project Structure
 
-aqi_prediction_project
+```
+aqi_prediction_project/
 │
 ├── dataset/
 │   └── city_day.csv
@@ -53,9 +54,13 @@ aqi_prediction_project
 │   └── aqi_model.pkl
 │
 ├── train_model.py
+│
 ├── app.py
+│
 ├── requirements.txt
+│
 └── README.md
+
 
 ---
 

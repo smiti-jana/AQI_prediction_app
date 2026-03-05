@@ -9,7 +9,7 @@ The model is trained using environmental pollution data and deployed using **Str
 The application also provides **visualizations, AQI categories, and health precautions** to help users understand the air quality conditions better.
 
 ---
-👉Live demo:https://diabetesriskprediction-3s2zqyfnsxtlsbfm2gabnu.streamlit.app/
+👉Live demo : https://aqipredictionapp-dthhfhih43q2a5dbruie5r.streamlit.app/
 ---
 
 ## 🚀 Features
